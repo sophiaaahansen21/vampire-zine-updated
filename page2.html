@@ -9,8 +9,25 @@
 <body>
   <div class="castle">
     <img src="images/moon.png" alt="moon" class="moon">
-    <img src="images/threebats.png" alt="bats" class="bats">
+
+    <img src="images/threebats.png" alt="bats" class="bats" id="bats">
+
     <img src="images/castle.png" alt="castle" class="castle-img">
   </div>
+
+  <audio id="batSound">
+    <source src="audio/batsounds.mp3" type="audio/mp3">
+  </audio>
+
+  <script>
+    const batBtn = document.getElementById("bats");
+    const batSound = document.getElementById("batSound");
+
+    batBtn.addEventListener("click", function() {
+      batSound.currentTime = 0;
+      batSound.play();
+    });
+  </script>
 </body>
 </html>
+
