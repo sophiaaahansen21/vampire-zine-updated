@@ -42,18 +42,42 @@
       text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
       margin: 0;
     }
+
+    .controls img {
+      width: 150px;
+      transition: transform 0.2s;
+      border-radius: 8px;
+      margin: 0 15px;
+    }
+
+    .controls img:hover {
+      transform: scale(1.1);
+    }
+
+    .controls {
+      position: absolute;
+      bottom: 40px;
+      right: 40px;
+    }
   </style>
 </head>
 <body>
   <div class="frontofbook-container">
     <img src="images/frontofbook.jpg" alt="front of book" class="frontofbook">
+
     <div class="title-container">
       <h1 class="title">Nocturne Institute</h1>
     </div>
 
-        <div class="key-container">
-      <img src="images/key.png" alt="Key">
+    <div class="controls">
+      <img id="key" src="images/key.png" alt="Key">
     </div>
   </div>
+
+  <script>
+    document.getElementById("key").addEventListener("click", function() {
+      window.location.href = "page2.html";
+    });
+  </script>
 </body>
 </html>
