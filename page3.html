@@ -19,7 +19,8 @@
 
     <img src="images/frame3.png" alt="Frame 3" class="gallery-item" id="frame3">
 
-    <img src="images/frame4.png" alt="Frame 4" class="gallery-item">
+
+    <img src="images/frame4.png" alt="Frame 4" class="gallery-item" id="frame4">
   </div>
 
   <audio id="frame2sound">
@@ -28,6 +29,10 @@
 
   <audio id="frame3sound">
     <source src="audio/ladygaga.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="frame4sound">
+    <source src="audio/twilight.mp3" type="audio/mp3">
   </audio>
 
   <script>
@@ -46,6 +51,14 @@ const frame2 = document.getElementById("frame2");
     frame3.addEventListener("click", function() {
       frame3Sound.currentTime = 0;
       frame3Sound.play();
+    });
+
+    const frame4 = document.getElementById("frame4");
+    const frame4Sound = document.getElementById("frame4sound");
+
+    frame4.addEventListener("click", function() {
+      frame4Sound.currentTime = 0;
+      frame4Sound.play();
     });
   </script>
 
