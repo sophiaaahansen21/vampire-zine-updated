@@ -14,8 +14,11 @@
 
   <div class="gallery">
     <img src="images/frame1.png" alt="Frame 1" class="gallery-item">
+
     <img src="images/frame2.png" alt="Frame 2" class="gallery-item" id="frame2">
-    <img src="images/frame3.png" alt="Frame 3" class="gallery-item">
+
+    <img src="images/frame3.png" alt="Frame 3" class="gallery-item" id="frame3">
+
     <img src="images/frame4.png" alt="Frame 4" class="gallery-item">
   </div>
 
@@ -23,15 +26,29 @@
     <source src="audio/dracula.mp3" type="audio/mp3">
   </audio>
 
+  <audio id="frame3sound">
+    <source src="audio/ladygaga.mp3" type="audio/mp3">
+  </audio>
+
   <script>
-    const frame2 = document.getElementById("frame2");
+
+const frame2 = document.getElementById("frame2");
     const frame2Sound = document.getElementById("frame2sound");
 
     frame2.addEventListener("click", function() {
       frame2Sound.currentTime = 0;
       frame2Sound.play();
     });
+
+    const frame3 = document.getElementById("frame3");
+    const frame3Sound = document.getElementById("frame3sound");
+
+    frame3.addEventListener("click", function() {
+      frame3Sound.currentTime = 0;
+      frame3Sound.play();
+    });
   </script>
 
 </body>
 </html>
+
