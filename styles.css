@@ -100,13 +100,10 @@ body.page3 {
   margin: 0;
   padding: 0;
   overflow-y: scroll;
-  font-family: sans-serif;
 }
 
 body.page3 .background-container {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -119,12 +116,24 @@ body.page3 .background-img {
   object-fit: cover;
 }
 
+.alumni-lace-wrapper {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.alumni-lace {
+  width: 250%;    
+  margin-top: 0%;
+  padding-top: 20px;   
+  overflow: hidden;}
+
 body.page3 .gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
-  padding: 60px 0;
+  gap: 40px;        
+  padding: 60px 0;  
+  margin-top: 40px;
 }
 
 body.page3 .gallery-item {
