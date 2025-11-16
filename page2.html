@@ -7,8 +7,12 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
+  <body class="page2">
+
   <div class="castle">
-    <img src="images/moon.png" alt="moon" class="moon">
+
+    <img src="images/moon.png" alt="moon" class="moon" id="moon">
 
     <img src="images/threebats.png" alt="bats" class="bats" id="bats">
 
@@ -27,7 +31,11 @@
       batSound.currentTime = 0;
       batSound.play();
     });
+
+    document.getElementById("moon").addEventListener("click", function() {
+      window.location.href = "page3.html";
+    });
   </script>
+
 </body>
 </html>
-
