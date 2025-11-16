@@ -142,3 +142,64 @@ body.page3 .gallery-item {
   height: auto;
   display: block;
 }
+
+body.page4 {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  overflow-x: hidden;
+}
+
+body.page4 .background-container {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+body.page4 .background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.page4 .mirror-wall {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+body.page4 .main-mirror {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;      
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+body.page4 .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Gothicfed', serif;
+  font-size: 20px;
+  color: rgb(91, 89, 89);
+  z-index: 11;
+}
+
+body.page4 .mirror {
+  position: absolute;
+  width: 160px;     
+  opacity: 0.9;
+}
+
+body.page4 .mirror1 { top: 1%; left: 2%; }
+body.page4 .mirror2 { top: 3%; right: 5%; }
+body.page4 .mirror3 { top: 50%; left: 0%; }
+body.page4 .mirror4 { top: 75%; right: 5%; }
+body.page4 .mirror5 { top: 70%; left: 20%; }
+body.page4 .mirror6 { top: 80%; right: 20%; }
+body.page4 .mirror7 { top: 35%; left: 80%; }
+body.page4 .mirror8 { top: 10%; right: 40%; }
