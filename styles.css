@@ -117,15 +117,21 @@ body.page3 .background-img {
 }
 
 .alumni-lace-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin-top: 20px;
+  z-index: 10; 
+  text-align: center;
 }
 
 .alumni-lace {
-  width: 250%;    
-  margin-top: 0%;
-  padding-top: 20px;   
-  overflow: hidden;}
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
 
 body.page3 .gallery {
   display: flex;
@@ -133,13 +139,14 @@ body.page3 .gallery {
   align-items: center;
   gap: 40px;        
   padding: 60px 0;  
-  margin-top: 40px;
+  margin-top: 490px;
 }
 
 body.page3 .gallery-item {
   width: 70%;
   max-width: 600px;
   height: auto;
+  align-items: center;
   display: block;
 }
 
