@@ -250,7 +250,7 @@ body.page4 .main-mirror {
 }
 
 body.page4 .main-mirror:hover {
-  transform: translate(-50%, -50%) scale(1.15);   /* grow on hover */
+  transform: translate(-50%, -50%) scale(1.15);  
 }
 
 
@@ -414,4 +414,131 @@ body.page5 {
 
 .bat-link:hover {
   transform: scale(1.15);
+}
+
+PAGE 6 WILL BE HERE 
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  font-family: "Garamond", serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.background-layer {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("images/bats.jpg") center/cover no-repeat;
+  z-index: -3;
+}
+
+.bats-decor {
+  position: absolute;
+  width: 60%;          
+  top: 12%;           
+  left: 50%;
+  transform: translateX(-50%);
+
+  pointer-events: none;
+  z-index: -2;
+}
+
+.frame {
+  position: absolute;
+  width: 70%;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.quill-link {
+  position: absolute;
+  top: 430px;
+  right: 120px;
+  width: 160px;
+  z-index: 4;
+  cursor: pointer;
+  filter: drop-shadow(0 0 12px rgba(0,0,0,0.6));
+}
+
+.quill-link:hover .quill {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+
+.quill {
+  width: 100%;
+}
+
+.quill-link:hover .quill {
+  transform: scale(1.05);
+  transition: 0.2s ease;
+}
+@font-face {
+  font-family: 'GothicFed';
+  src: url('/mnt/data/fed.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text1, .text2, .text3, .text4 , .text5{
+  position: absolute;
+  color: #7a2121;
+  font-family: 'GothicFed', serif;   
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px black;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.text1 { top: 150px; left: 900px; }
+.text2 { top: 250px; right: 170px; }
+.text3 { top: 380px; left: 180px; }
+.text4 { top: 180px; right: 160px; }
+.text5 { top: 330px; right: 160px; }
+
+.signature-box-container {
+  position: absolute;
+  bottom: 140px;     
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30%;
+  z-index: 5;
+}
+
+.signature-box-container {
+  position: absolute;
+  bottom: 80px;            
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;               
+  z-index: 5;
+}
+
+.signature-box {
+  width: 100%;
+  height: 80px;             
+  background: rgba(0, 0, 0, 0.6);
+  border: 2px solid #7a2121;
+  border-radius: 6px;
+  padding: 10px 12px;
+  color: #7a2121;
+  font-family: 'GothicFed', serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  resize: none;
+  outline: none;
+  box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.signature-box::placeholder {
+  color: #5f1616;
+  opacity: 0.85;
 }
