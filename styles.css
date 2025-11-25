@@ -95,11 +95,10 @@ body.page2 {
 @keyframes flash {
   0% { opacity: 0; }
   40% { opacity: 0; }
-  45% { opacity: 1; }   
+  45% { opacity: 0.8; }   
   55% { opacity: 0.4; } 
   100% { opacity: 0; }
 }
-
 
 .bats {
   position: absolute;
@@ -149,12 +148,12 @@ body.page3 .background-img {
 }
 
 .alumni-lace {
+  position: absolute;
   width: 100%;
   display: block;
   margin: 0 auto;
   padding-top: 0;
 }
-
 
 body.page3 .gallery {
   display: flex;
@@ -162,7 +161,7 @@ body.page3 .gallery {
   align-items: center;
   gap: 40px;        
   padding: 60px 0;  
-  margin-top: 490px;
+  margin-top: 950px;
 }
 
 body.page3 .gallery-item {
