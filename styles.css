@@ -243,10 +243,16 @@ body.page4 .main-mirror {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 350px;      
+  width: 350px;
   transform: translate(-50%, -50%);
   z-index: 10;
+  transition: transform 0.3s ease;   
 }
+
+body.page4 .main-mirror:hover {
+  transform: translate(-50%, -50%) scale(1.15);  
+}
+
 
 body.page4 .text {
   position: absolute;
@@ -261,19 +267,57 @@ body.page4 .text {
 
 body.page4 .mirror {
   position: absolute;
-  width: 160px;     
   opacity: 0.9;
 }
 
-body.page4 .mirror1 { top: 1%; left: 2%; }
+.mirror1 { width: 90px; }
+.mirror2 { width: 90px; }
+.mirror3 { width: 110px; }
+.mirror4 { width: 130px; }
+.mirror5 { width: 130px; }
+.mirror6 { width: 140px; }
+.mirror7 { width: 140px; }
+.mirror8 { width: 140px; }
+
+body.page4 .mirror1 { top: 1%; left: 2%;  }
 body.page4 .mirror2 { top: 3%; right: 5%; }
 body.page4 .mirror3 { top: 50%; left: 0%; }
-body.page4 .mirror4 { top: 75%; right: 5%; }
-body.page4 .mirror5 { top: 70%; left: 20%; }
-body.page4 .mirror6 { top: 80%; right: 20%; }
+body.page4 .mirror4 { top: 75%; right: 5%;}
+body.page4 .mirror5 { top: 80%; left: 20%;}
+body.page4 .mirror6 { top: 80%; right: 20%;}
 body.page4 .mirror7 { top: 35%; left: 80%; }
-body.page4 .mirror8 { top: 10%; right: 40%; }
+body.page4 .mirror8 { top: 10%; right: 20%;}
 
+body.page4 .mirror1 {
+  width: 150px;   
+}
+
+body.page4 .mirror2 {
+  width: 50px;   
+}
+
+body.page4 .mirror3 {
+  width: 100px;   
+}
+
+body.page4 .mirror4 {
+  width: 10px;   
+}
+body.page4 .mirror5 {
+  width: 120px;   
+}
+
+body.page4 .mirror6 {
+  width: 100px;   
+}
+
+body.page4 .mirror7 {
+  width: 70px;   
+}
+
+body.page4 .mirror8 {
+  width: 70px;   
+}
 
 .page5 {
   position: relative;
