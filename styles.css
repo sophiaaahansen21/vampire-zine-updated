@@ -209,6 +209,10 @@ body.page3 .gallery-item {
   z-index: 9999;
 }
 
+.bat-link:hover {
+  transform: scale(1.15);
+}
+
 body.page4 {
   margin: 0;
   padding: 0;
