@@ -321,7 +321,7 @@ body.page4 .mirror8 {
 
 .page5 {
   position: relative;
-  min-height: 2000px;   
+  min-height: 2000px;
   margin: 0;
   padding: 0;
   overflow-y: auto;
@@ -348,7 +348,7 @@ body.page5 {
   left: 50%;
   transform: translateX(-50%);
 
-  font-family: 'GothicFed', serif; 
+  font-family: 'GothicFed', serif;
   font-size: 35px;
   letter-spacing: 3px;
 
@@ -357,33 +357,61 @@ body.page5 {
   z-index: 10;
 }
 
-.page5 .bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2000px;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.page5 img:not(.bg) {
+.card-wrapper {
   position: absolute;
   width: 230px;
   left: 50%;
   transform: translateX(-50%);
-  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
 }
 
-.page5 img[alt="The Lovers"] {
-  top: 160px;  
+.card-base {
+  width: 100%;
+  display: block;
 }
 
-.page5 img[alt="The Fool"] {
-  top: 620px;  
+.card-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none;
 }
 
-.page5 img[alt="The Star"] {
-  top: 1100px; 
+.card-wrapper:hover .card-hover {
+  opacity: 1;
+}
+
+.card-wrapper.lovers {
+  top: 160px;
+}
+
+.lovers .card-hover {
+  width: 140%;
+  left: -30%;
+  top: -15%;
+}
+
+.card-wrapper.fool {
+  top: 620px;
+}
+
+.card-wrapper.star {
+  top: 1100px;
   width: 400px;
+}
+
+.bat-link {
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  z-index: 9999;
+}
+
+.bat-link:hover {
+  transform: scale(1.15);
 }
