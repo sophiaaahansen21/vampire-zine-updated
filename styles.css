@@ -82,8 +82,11 @@ body.page2 {
     width: 120px;
 }
 
-.lightning {
-  position: absolute;
+#lightning {
+  cursor: pointer;
+  z-index: 1000;
+  position: relative;
+   position: absolute;
   top: 120px;  
   right: 100px;  
   width: 120px;
@@ -92,6 +95,7 @@ body.page2 {
   animation: flash 2s infinite;
 }
 
+
 @keyframes flash {
   0% { opacity: 0; }
   40% { opacity: 0; }
@@ -99,6 +103,24 @@ body.page2 {
   55% { opacity: 0.4; } 
   100% { opacity: 0; }
 }
+
+@font-face {
+  font-family: 'LightningBolt';
+  src: url('fonts/lightningbolt.ttf') format('truetype');
+}
+
+.lightning-text {
+  position: absolute;
+  top: 250px;
+  right: 80px;
+  font-family: 'LightningBolt', sans-serif;
+  font-size: 24px;
+  color: #838383;
+  letter-spacing: 2px;
+  opacity: 10;
+  animation: flash 3s infinite;
+}
+
 
 .bats {
   position: absolute;

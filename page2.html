@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Nocturne Institute</title>
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    @font-face {
+      font-family: 'LightningBolt';
+      src: url('fonts/lightning bolt.ttf') format('truetype');
+    }
+
+    .lightning-text {
+      position: absolute;
+      top: 250px;
+      right: 80px;
+      font-family: 'LightningBolt', cursive;
+      font-size: 20px;
+      color: #434343;
+      letter-spacing: 2px;
+      pointer-events: none;
+    }
+
+    #lightning {
+      cursor: pointer;
+      z-index: 1000;
+      position: relative;
+    }
+  </style>
 </head>
 
 <body class="page2">
@@ -13,11 +37,14 @@
 
     <img src="images/moon.png" alt="moon" class="moon" id="moon">
 
-    <img src="images/lightning.png" alt="lightning" class="lightning">
+    <img src="images/lightning.png" alt="lightning" class="lightning" id="lightning">
+
+    <p class="lightning-text">welcome to Nocturne Institute</p>
 
     <img src="images/threebats.png" alt="bats" class="bats" id="bats">
 
     <img src="images/castle.png" alt="castle" class="castle-img" id="castle">
+
   </div>
 
   <audio id="batSound">
@@ -28,28 +55,37 @@
     <source src="audio/castle.mp3" type="audio/mp3">
   </audio>
 
+  <audio id="boltSound">
+    <source src="audio/bolt.mp3" type="audio/mp3">
+  </audio>
+
   <script>
     const batBtn = document.getElementById("bats");
     const batSound = document.getElementById("batSound");
-
-    batBtn.addEventListener("click", function() {
+    batBtn.addEventListener("click", () => {
       batSound.currentTime = 0;
       batSound.play();
     });
 
     const castleBtn = document.getElementById("castle");
     const castleSound = document.getElementById("castleSound");
-
-    castleBtn.addEventListener("click", function() {
+    castleBtn.addEventListener("click", () => {
       castleSound.currentTime = 0;
       castleSound.play();
     });
 
-    document.getElementById("moon").addEventListener("click", function() {
+    const lightningBtn = document.getElementById("lightning");
+    const boltSound = document.getElementById("boltSound");
+
+    lightningBtn.addEventListener("click", () => {
+      boltSound.currentTime = 0;
+      boltSound.play().catch(err => console.log(err));
+    });
+
+    document.getElementById("moon").addEventListener("click", () => {
       window.location.href = "page3.html";
     });
   </script>
 
 </body>
 </html>
-
