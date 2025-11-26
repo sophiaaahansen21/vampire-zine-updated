@@ -7,8 +7,21 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <div class="image-container">
     <img src="images/backofbook.jpeg" alt="Overlay Image" class="overlay-img">
   </div>
+
+  <audio id="lastAudio" src="audio/lastpage.mp3"></audio>
+
+  <script>
+    document.addEventListener("click", function playOnce() {
+      const audio = document.getElementById("lastAudio");
+      audio.currentTime = 0;
+      audio.play();
+      document.removeEventListener("click", playOnce); 
+    });
+  </script>
+
 </body>
 </html>

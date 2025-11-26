@@ -17,11 +17,15 @@
 
     <img src="images/threebats.png" alt="bats" class="bats" id="bats">
 
-    <img src="images/castle.png" alt="castle" class="castle-img">
+    <img src="images/castle.png" alt="castle" class="castle-img" id="castle">
   </div>
 
   <audio id="batSound">
     <source src="audio/batsounds.mp3" type="audio/mp3">
+  </audio>
+
+  <audio id="castleSound">
+    <source src="audio/castle.mp3" type="audio/mp3">
   </audio>
 
   <script>
@@ -33,6 +37,14 @@
       batSound.play();
     });
 
+    const castleBtn = document.getElementById("castle");
+    const castleSound = document.getElementById("castleSound");
+
+    castleBtn.addEventListener("click", function() {
+      castleSound.currentTime = 0;
+      castleSound.play();
+    });
+
     document.getElementById("moon").addEventListener("click", function() {
       window.location.href = "page3.html";
     });
@@ -40,3 +52,4 @@
 
 </body>
 </html>
+
