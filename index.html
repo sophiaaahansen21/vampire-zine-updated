@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nocturne Institute Yearbook</title>
   <link rel="stylesheet" href="styles.css">
+
   <style>
     body {
       margin: 0;
@@ -24,13 +25,15 @@
       object-position: center;
     }
 
+    /* CLICKABLE TITLE */
     .title-container {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       text-align: center;
-      pointer-events: none;
+      cursor: pointer;      /* <— makes it clickable */
+      z-index: 10;          /* <— keeps it above the image */
     }
 
     .title {
@@ -62,10 +65,15 @@
   </style>
 </head>
 <body>
+
+  <audio id="introAudio">
+  <source src="audio/intropage.mp3" type="audio/mp3">
+  </audio>
+
   <div class="frontofbook-container">
     <img src="images/frontofbook.jpg" alt="front of book" class="frontofbook">
 
-    <div class="title-container">
+    <div class="title-container" id="titleClick">
       <h1 class="title">Nocturne Institute</h1>
     </div>
 
@@ -75,9 +83,15 @@
   </div>
 
   <script>
+    document.getElementById("titleClick").addEventListener("click", function () {
+      const audio = document.getElementById("introAudio");
+      audio.play();
+    });
+
     document.getElementById("key").addEventListener("click", function() {
       window.location.href = "page2.html";
     });
   </script>
+
 </body>
 </html>

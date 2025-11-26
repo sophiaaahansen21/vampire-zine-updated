@@ -459,22 +459,22 @@ body {
 
 .quill-link {
   position: absolute;
+  width: 160px;
+  top: 430px;   
+  right: 120px;   
+  z-index: 3;
+  filter: drop-shadow(0 0 12px rgba(0,0,0,0.6));
+  pointer-events: none;
+}
+
+.quill-link {
+  position: absolute;
   top: 430px;
   right: 120px;
-  width: 160px;
   z-index: 4;
   cursor: pointer;
-  filter: drop-shadow(0 0 12px rgba(0,0,0,0.6));
 }
 
-.quill-link:hover .quill {
-  transform: scale(1.05);
-  transition: 0.2s ease;
-}
-
-.quill {
-  width: 100%;
-}
 
 .quill-link:hover .quill {
   transform: scale(1.05);
