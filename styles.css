@@ -414,8 +414,10 @@ body.page5 {
 
 .lovers .card-hover {
   width: 140%;
-  left: -30%;
-  top: -15%;
+  height: 110%;
+  object-position: center;
+  width: 500px;
+  left: -50%;
 }
 
 .card-wrapper.fool {
@@ -427,7 +429,6 @@ body.page5 {
   object-position: center;
   width: 500px;
   left: -50%;
-
 }
 
 .card-wrapper.star {
@@ -571,4 +572,15 @@ body {
 .signature-box::placeholder {
   color: #5f1616;
   opacity: 0.85;
+}
+
+.video {
+  width: 60%;          
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%); 
+  z-index: 5;
+  border-radius: 10px; 
 }

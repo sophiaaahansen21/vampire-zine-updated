@@ -7,28 +7,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-body class="page8">
+<body class="page8">
 
   <a href="index.html">
     <img src="images/battt.png" alt="Bat Link" class="bat-link">
   </a>
 
-<body>
-
   <div class="image-container">
     <img src="images/backofbook.jpeg" alt="Overlay Image" class="overlay-img">
   </div>
 
-  <audio id="lastAudio" src="audio/lastpage.mp3"></audio>
-
-  <script>
-    document.addEventListener("click", function playOnce() {
-      const audio = document.getElementById("lastAudio");
-      audio.currentTime = 0;
-      audio.play();
-      document.removeEventListener("click", playOnce); 
-    });
-  </script>
+  <video class="video" controls>
+  <source src="videos/tiktokmeme.mp4" type="video/mp4">
+</video>
 
 </body>
 </html>

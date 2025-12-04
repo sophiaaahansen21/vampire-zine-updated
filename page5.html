@@ -16,9 +16,25 @@
   <div class="title-mlt">Most Likely To...</div>
 
   <div class="card-wrapper lovers">
-    <img src="images/lovers.jpg" class="card-base" alt="The Lovers">
-    <img src="images/aliceandjasper.png" class="card-hover" alt="Lovers Hover">
-  </div>
+  <img src="images/lovers.jpg" class="card-base" alt="The Lovers">
+
+  <video class="card-hover" playsinline>
+    <source src="videos/aliceandjasperedit.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  const loversCard = document.querySelector('.card-wrapper.lovers');
+  const loversVideo = loversCard.querySelector('.card-hover');
+
+  loversCard.addEventListener('click', () => {
+    loversVideo.style.opacity = "1";
+    loversVideo.currentTime = 0; 
+    loversVideo.play().catch(err => {
+      console.log("Audio blocked:", err);
+    });
+  });
+</script>
 
  <div class="card-wrapper fool">
   <img src="images/fool.jpg" class="card-base" alt="The Fool">
