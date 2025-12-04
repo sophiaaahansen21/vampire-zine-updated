@@ -450,13 +450,49 @@ body.page5 {
   transform: scale(1.15);
 }
 
-PAGE 6 WILL BE HERE 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto; 
+}
+
+@font-face {
+  font-family: 'Gothicfed';
+  src: url('Gothicfed.ttf');
+}
+
+body {
+  display: flex;
+  flex-direction: column;   
+  align-items: center;
+  gap: 60px;                
+  font-family: 'Gothicfed', serif;
+}
+
+h1 {
+  margin-top: 150px;
+  padding-top: 100px;
+  font-family: 'Gothicfed', serif;
+  font-size: 100px;
+  color: rgb(111, 31, 31);
+  text-shadow: 0 0 12px rgba(0,0,0,0.7);
+}
+
+video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  display: block;
+  padding-bottom: 80px;
+}
 
 body {
   margin: 0;
   padding: 0;
   background: #000;
-  font-family: "Garamond", serif;
+  font-family: "gothic", serif;
   position: relative;
   overflow-x: hidden;
 }
@@ -466,7 +502,6 @@ body {
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background: url("images/bats.jpg") center/cover no-repeat;
   z-index: -3;
 }
 
