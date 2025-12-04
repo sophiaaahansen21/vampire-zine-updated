@@ -91,11 +91,10 @@ body.page2 {
 #lightning {
   cursor: pointer;
   z-index: 1000;
-  position: relative;
   position: absolute;
-  top: 30px;  
+  top: 50px;  
   right: 100px;  
-  width: 10px;
+  width: 120px;
 
   opacity: 0;
   animation: flash 1s infinite;
