@@ -457,9 +457,21 @@ html, body {
   overflow-y: auto; 
 }
 
+.page6 {
+  background: linear-gradient(to bottom, #000000, #320000);
+  min-height: 100vh;
+}
+
 @font-face {
   font-family: 'Gothicfed';
   src: url('Gothicfed.ttf');
+}
+
+@font-face {
+  font-family: 'AstonScript';
+  src: url('/mnt/data/astonscript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -475,17 +487,31 @@ h1 {
   padding-top: 100px;
   font-family: 'Gothicfed', serif;
   font-size: 100px;
-  color: rgb(111, 31, 31);
+  color: rgb(172, 48, 48);
   text-shadow: 0 0 12px rgba(0,0,0,0.7);
 }
 
-video {
+.video-block {
   width: 80%;
   max-width: 700px;
+  margin: 0 auto;      
+  text-align: center;
+  margin-bottom: 60px;   
+}
+
+.page6 video {
+  width: 100%;          
+  display: block;
+  margin: 0 auto;        
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-  display: block;
-  padding-bottom: 80px;
+}
+
+.video-text {
+  margin-top: 30px;
+  font-size: 20px;
+  font-family: 'AstonScript', cursive;
+  color: rgb(129, 112, 82);
 }
 
 body {
