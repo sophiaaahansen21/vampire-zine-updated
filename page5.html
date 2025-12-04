@@ -20,15 +20,48 @@
     <img src="images/aliceandjasper.png" class="card-hover" alt="Lovers Hover">
   </div>
 
-  <div class="card-wrapper fool">
-    <img src="images/fool.jpg" class="card-base" alt="The Fool">
-    <img src="images/countvoncount.png" class="card-hover" alt="Fool Hover">
-  </div>
+ <div class="card-wrapper fool">
+  <img src="images/fool.jpg" class="card-base" alt="The Fool">
+
+  <video class="card-hover" playsinline>
+    <source src="videos/countvoncountedit.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  const foolCard = document.querySelector('.card-wrapper.fool');
+  const foolVideo = foolCard.querySelector('.card-hover');
+
+  foolCard.addEventListener('click', () => {
+    foolVideo.style.opacity = "1";
+    foolVideo.currentTime = 0;  
+    foolVideo.play().catch(err => {
+      console.log("Audio blocked:", err);
+    });
+  });
+</script>
 
   <div class="card-wrapper star">
-    <img src="images/star.png" class="card-base" alt="The Star">
-    <img src="images/draculaaa.png" class="card-hover" alt="Star Hover">
-  </div>
+  <img src="images/star.png" class="card-base" alt="The Star">
+
+  <video class="card-hover" playsinline>
+    <source src="videos/draculaedit.mp4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  const starCard = document.querySelector('.card-wrapper.star');
+  const starVideo = starCard.querySelector('.card-hover');
+
+  starCard.addEventListener('click', () => {
+    starVideo.style.opacity = "1";   
+    starVideo.play().catch(err => {
+      console.log("Browser blocked audio:", err);
+    });
+  });
+</script>
+
+ </div>
 
 </body>
 </html>

@@ -81,21 +81,25 @@ body.page2 {
     top: 5px;
     left: 1px;
     width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.moon:hover {
+  transform: scale(1.4);
 }
 
 #lightning {
   cursor: pointer;
   z-index: 1000;
   position: relative;
-   position: absolute;
-  top: 120px;  
+  position: absolute;
+  top: 30px;  
   right: 100px;  
-  width: 120px;
+  width: 10px;
 
   opacity: 0;
-  animation: flash 2s infinite;
+  animation: flash 1s infinite;
 }
-
 
 @keyframes flash {
   0% { opacity: 0; }
@@ -416,6 +420,14 @@ body.page5 {
 
 .card-wrapper.fool {
   top: 620px;
+}
+
+.card-wrapper.fool .card-hover {
+  height: 110%;
+  object-position: center;
+  width: 500px;
+  left: -50%;
+
 }
 
 .card-wrapper.star {
